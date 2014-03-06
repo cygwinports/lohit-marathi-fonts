@@ -1,7 +1,7 @@
 inherit font
 
 NAME="font-lohit-marathi-ttf"
-VERSION=2.5.3
+VERSION=2.93.0
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Lohit Marathi font"
@@ -14,7 +14,7 @@ SRC_DIR="lohit-marathi-${VERSION}"
 src_compile() {
 	lndirs
 	cd ${B}
-	cygmake
+	cygmake ttf
 }
 
 src_install() {
